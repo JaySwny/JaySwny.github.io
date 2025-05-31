@@ -64,7 +64,6 @@ padding-left: 5px;
 .collapsible-content {
   display: block;
   transition: max-height 0.8s ease, padding 0.8s ease;
-  max-height: 1000px;
   padding-top : 10px;
   overflow-y: hidden;
   overflow-x: visible;
