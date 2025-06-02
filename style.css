@@ -374,6 +374,10 @@ ul.P {
   list-style: none;
   scrollbar-width: none;       
 }
+.nav-links li a {
+  font-size: .75rem;
+  white-space: nowrap;
+}
 
 .nav-links::-webkit-scrollbar {
   display: none;               

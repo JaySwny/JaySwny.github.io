@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
   collapsibles.forEach(btn => {
     const content = btn.nextElementSibling;
 
-    // Start open by default
-    content.classList.remove("closed");
-    btn.classList.add("active");
+    const isJaySection = btn.textContent.trim() === "About Me";
+
+    // Open only "Jay Sweeney" section
+    if (isJaySection) {
+      content.classList.remove("closed");
+      btn.classList.add("active");
+    } else {
+      content.classList.add("closed");
+      btn.classList.remove("active");
+    }
 
     btn.addEventListener("click", function () {
       const isOpen = !content.classList.contains("closed");
 
-      // Toggle class to trigger CSS animation
       content.classList.toggle("closed", isOpen);
       btn.classList.toggle("active", !isOpen);
     });
   });
 });
-
-
