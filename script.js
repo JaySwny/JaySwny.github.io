@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+ 
     window.addEventListener('resize', function() {
       if (!content.classList.contains('closed')) {
         content.style.maxHeight = content.scrollHeight + "px";
