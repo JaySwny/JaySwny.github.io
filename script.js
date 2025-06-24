@@ -39,4 +39,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href").substring(1);
+      const section = document.getElementById(targetId);
+      if (!section) return;
+
+      const button = section.querySelector(".collapsible");
+      const content = section.querySelector(".collapsible-content");
+
+      // Open if not already open
+      if (content.classList.contains("closed")) {
+        content.classList.remove("closed");
+        button.classList.add("active");
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      // Smooth scroll
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  });
 });

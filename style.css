@@ -1,3 +1,6 @@
+html {
+    scroll-padding-top: 80px;
+}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -22,13 +25,13 @@ main {
     margin: 0 auto;
 }
 .Title {
-color: #ebe7e7;
-font-size: 1.5rem;
-margin-top: 0;
-margin-bottom: 10px;
-border-bottom: 2px solid #ebe7e7;
-width: 100%;
-padding-left: 5px;
+   color: #ebe7e7;
+    font-size: 1.5rem;
+   margin-top: 0;
+    margin-bottom: 10px;
+   border-bottom: 2px solid #ebe7e7;
+    width: 100%;
+    padding-left: 5px;
 }
 
 .text-block {
@@ -44,6 +47,15 @@ padding-left: 5px;
     color: #ebe7e7;
 }
 
+
+.P-skill-inline {
+
+    text-align: left;
+    margin: 0;
+    color: #ebe7e7;
+    flex-wrap: wrap;
+    font-weight: bold;
+} 
 
 
 
@@ -304,7 +316,15 @@ ul.P {
     padding-left: 150px;
  }
 
+.Hobbies {
+  padding-top: 50px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 150px;
+  padding-bottom: 10px ;
+  line-height: 1.6;
 
+}
 
  @media (max-width: 768px) {
   .nav-container {
