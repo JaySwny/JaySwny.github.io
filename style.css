@@ -35,8 +35,8 @@ main {
 }
 
 .text-block {
-  overflow: hidden;
-  padding: 12px;
+  overflow: padding;
+  padding: 15px;
 
 }
 
